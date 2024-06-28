@@ -1,0 +1,27 @@
+{
+  "name": "student-list-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "server": "nodemon dist/app.js"
+  },
+  "keywords": [],
+  "author": "Jameel-Webdev",
+  "license": "ISC",
+  "description": "Nodejs Express Student List Coding Assignment",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.9",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.2"
+  }
+}
