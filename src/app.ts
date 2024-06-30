@@ -1,13 +1,13 @@
 /*Import packages*/
-import express from "express";
 import cors from "cors";
-import { config } from "dotenv";
+import dotenv from "dotenv";
+import express from "express";
 import dbConfig from "./utils/dbConfig.js";
-config();
+dotenv.config();
 
 /*Import routes*/
-import userRoutes from "./router/studentRoutes.js";
 import { errorHandler, notFound } from "./middleware/errorMiddleware.js";
+import userRoutes from "./router/studentRoutes.js";
 
 /*Database connection*/
 const port = process.env.PORT || 7000;
